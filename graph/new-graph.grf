@@ -6,4 +6,7 @@
 </GraphParameters>
 <Dictionary/>
 </Global>
+<Phase number="0">
+<Node guiName="Success" guiX="333" guiY="255" id="SUCCESS" type="SUCCESS"/>
+</Phase>
 </Graph>
