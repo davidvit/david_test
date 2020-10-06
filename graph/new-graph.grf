@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Graph author="david" created="Tue Oct 06 08:17:11 CEST 2020" guiVersion="5.7.0.21" id="1601965582208" licenseCode="CLP1DCLOVE28718064BY" name="new-graph" showComponentDetails="true">
 <Global>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="|" name="recordName1" recordDelimiter="\n" type="delimited">
+<Field name="field1" type="string"/>
+<Field name="field2" type="string"/>
+<Field name="field3" type="string"/>
+<Field name="field4" type="string"/>
+<Field name="field5" type="string"/>
+<Field name="field6" type="string"/>
+</Record>
+</Metadata>
 <GraphParameters>
 <GraphParameterFile fileURL="workspace.prm"/>
 </GraphParameters>
 <Dictionary/>
 </Global>
 <Phase number="0">
+<Node guiName="DataGenerator" guiX="347" guiY="403" id="DATA_GENERATOR" type="DATA_GENERATOR"/>
+<Node fileURL="${DATAOUT_DIR}/xxx.log" guiName="FlatFileWriter" guiX="649" guiY="403" id="FLAT_FILE_WRITER" type="FLAT_FILE_WRITER"/>
 <Node guiName="Success" guiX="333" guiY="255" id="SUCCESS" type="SUCCESS"/>
+<Edge fromNode="DATA_GENERATOR:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (out)" toNode="FLAT_FILE_WRITER:0"/>
 </Phase>
 </Graph>
